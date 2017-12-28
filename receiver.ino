@@ -5,7 +5,6 @@
 // reliability, so you should only use RH_RF95 if you do not need the higher
 // level messaging abilities.
 // It is designed to work with the other example Feather9x_TX
-// Test
  
 #include <SPI.h>
 #include <RH_RF95.h>
