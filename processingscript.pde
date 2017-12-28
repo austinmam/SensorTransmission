@@ -2,6 +2,10 @@ import processing.serial.*;
 import java.io.FileWriter;
 Serial mySerial;
 PrintWriter output;
+
+/** This file should be installed on the computer connected to the receiver, it will
+	read the data from the receiver and write it to a file in the desired location. **/
+
 void setup() {
    mySerial = new Serial( this, Serial.list()[2], 9600 ); //index of list needs to change to match serial port
    output = createWriter("P:/ece_scratch/ECE414MamHyde/data.csv"); //creates csv in directory
